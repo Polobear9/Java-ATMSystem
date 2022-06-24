@@ -15,7 +15,7 @@ public class Userinfo {
 	public String Bankname;
 	public String Name;
 	private int Banknum = ran.nextInt(1000000000);
-	private int Balance;
+	int Balance = 1000000;
 	
 	public Userinfo (int CustomNumber, String Bankname, String Name) {
 		

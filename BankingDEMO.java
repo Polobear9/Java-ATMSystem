@@ -36,7 +36,7 @@ public class BankingDEMO {
 				while(SelectMenuNum != 2) {
 					System.out.println("Welcome to Check Balace System.");
 
-					System.out.println("Your Blance is : " + Lee.GetBalance() + " Japan Yen.");
+					System.out.println("Your Blance is : " + Lee.Balance + " Japan Yen.");
 					System.out.println("Your Blance is : " + Lee.GetBanknum() + " <- that is your Banknumber.");
 					
 					System.out.println("DO you want out? 1.YES 2.NO");
@@ -94,12 +94,12 @@ public class BankingDEMO {
 						
 						if(SendingBanknumber == Lee.GetBanknum()) {
 							System.out.println("This Banknumber is " + Lee.Name + " is Banknumber");
-							SendingBanknumber = Lee.GetBalance();
+							SendingBanknumber = Lee.Balance;
 						
 						}
 						if(SendingBanknumber == Kim.GetBanknum()) {
 							System.out.println("This Banknumber is " + Kim.Name + " is Banknumber");
-							SendingBanknumber = Kim.GetBalance();
+							SendingBanknumber = Kim.Balance;
 						
 						}
 						
