@@ -64,7 +64,7 @@ public class BankingDEMO {
 					
 					if(SendingMenu == 1) {
 						
-						System.out.println("Pleace Enter the Banknumber..EX)1 or 2 : ");
+						System.out.println("Pleace Enter the Your Banknumber..EX)1 or 2 : ");
 						System.out.println("1. " + Lee.GetBanknum() + " " + Lee.Name);
 						System.out.println("2. " + Kim.GetBanknum() + " " + Kim.Name);
 						
@@ -105,6 +105,8 @@ public class BankingDEMO {
 						}
 						
 						System.out.println("Really Do you want Send the Money?");
+						System.out.println("You Set the Money : " + SendingMoney);
+						
 						System.out.println("1.YES 2.NO");
 						int FinalCheck = sc.nextInt();
 						
@@ -113,6 +115,18 @@ public class BankingDEMO {
 							System.out.println(SendingBanknumber - SendingMoney);
 							
 							System.out.println("Pleace Chack the Balance.");
+							
+							System.out.println("Do you want Continue?");
+							System.out.println("1.YES 2.NO");
+							
+							int Last_Number = sc.nextInt();
+							
+							if(Last_Number == 1) {
+								MenuNum = 2;
+							}
+							if(Last_Number == 2) {
+								break;
+							}
 
 						}
 						if(FinalCheck == 2) {
