@@ -20,7 +20,7 @@ public class BankingDEMO {
 		
 		while(MenuNum != 5) {
 			SelectMenuNum = 0;
-			System.out.println("First We made a your Banknumber  " + "Your Banknumber is " + Lee.GetBanknum() + "!!Notice!! Pleace remember the your BankNumber.");
+			System.out.println("First We made a your Banknumber  " + "Your Banknumber is " + Lee.GetBanknum());
 			System.out.println("Welcome to " + " System. Pleace Enter the Number. (1~5)");
 			System.out.println("----1 : " + "Check Balace.");
 			System.out.println("----2 : " + "Sending Money.");
@@ -133,21 +133,34 @@ public class BankingDEMO {
 				while(SelectMenuNum != 2) {
 					System.out.println("Welcome to Out Money System.");
 					
-					System.out.println("DO you want out? 1.YES 2.NO");
+					System.out.println("DO you want out of Money? : 1.YES 2.NO");
 					SelectMenuNum = sc.nextInt();
 					
 					if(SelectMenuNum == 1) {
-						break;
+						System.out.println("How many Money do you want out? : ");
+						int Out_Money = sc.nextInt();
+						
+						System.out.println("Do you want out -->> : " + Out_Money + " ? ");
+						
+						System.out.println(" 1.YES 2.NO ");
+						int MenuSelect = sc.nextInt();
+						
+						if(MenuSelect == 1) {
+							int NowCash = Lee.Balance - Out_Money;
+							System.out.println("Your Money is left : " + NowCash);
+							
+							
+						}
 					}
 					if(SelectMenuNum == 2) {
-						SelectMenuNum = 0;
+						break;
 					}
 				
 				}
 
 			}
 			
-				if(MenuNum == 4) {
+			if(MenuNum == 4) {
 				
 				while(SelectMenuNum != 2) {
 					int AddMoney = Lee.GetBalance();
@@ -169,13 +182,13 @@ public class BankingDEMO {
 					}
 				
 				}
+			}
 			
 			if(MenuNum == 5) {
 				
 				System.out.println("Thanks for Use. Have a Nice day! ");
 				break;
 			}
-				}
 		}
 	}
 }
