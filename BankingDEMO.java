@@ -64,18 +64,18 @@ public class BankingDEMO {
 					
 					if(SendingMenu == 1) {
 						
-						System.out.println("Pleace Enter your Banknumber : ");
+						System.out.println("Pleace Enter the Banknumber..EX)1 or 2 : ");
 						System.out.println("1. " + Lee.GetBanknum() + " " + Lee.Name);
 						System.out.println("2. " + Kim.GetBanknum() + " " + Kim.Name);
 						
 						int MaintBankNumber = sc.nextInt();
 						
-						if(MaintBankNumber == Lee.GetBanknum()) {
+						if(MaintBankNumber == 1) {
 							MaintBankNumber = Lee.GetBalance();
 							System.out.println("This Banknumber is " + Lee.Name + " is Banknumber");
 						
 						}
-						if(MaintBankNumber == Kim.GetBanknum()) {
+						if(MaintBankNumber == 2) {
 							MaintBankNumber = Kim.GetBalance();
 							System.out.println("This Banknumber is " + Kim.Name + " is Banknumber");
 						}
@@ -86,18 +86,19 @@ public class BankingDEMO {
 						int SendingMoney = sc.nextInt();
 						
 						System.out.println("What Banknumber do you wnat sending?");
-						System.out.println("Enter the Number : ");
+						System.out.println("Pleace Enter the Banknumber..EX)1 or 2 : ");
+						
 						System.out.println("1. " + Lee.GetBanknum() + " " + Lee.Name);
 						System.out.println("2. " + Kim.GetBanknum() + " " + Kim.Name);
 						int SendingBanknumber = sc.nextInt();
 						
 						
-						if(SendingBanknumber == Lee.GetBanknum()) {
+						if(SendingBanknumber == 1) {
 							System.out.println("This Banknumber is " + Lee.Name + " is Banknumber");
 							SendingBanknumber = Lee.Balance;
 						
 						}
-						if(SendingBanknumber == Kim.GetBanknum()) {
+						if(SendingBanknumber == 2) {
 							System.out.println("This Banknumber is " + Kim.Name + " is Banknumber");
 							SendingBanknumber = Kim.Balance;
 						
