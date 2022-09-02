@@ -17,13 +17,11 @@ public class BankMenu_CheckBalance {
             int selectMenuNum = scanner.nextInt();
 
             if (selectMenuNum == 1) {
-                isSystem_Run = false;
                 break;
             }
             if (selectMenuNum == 2) {
                 isSystem_Run = true;
             }
         }
-
     }
 }

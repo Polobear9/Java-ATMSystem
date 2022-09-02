@@ -46,6 +46,7 @@ public class BankingDEMO {
                     System.out.println("Thanks for Use. Have a Nice day! ");
                     break;
             }
+            break;
         }
     }
 }

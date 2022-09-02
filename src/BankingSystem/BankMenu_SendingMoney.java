@@ -3,8 +3,8 @@ package BankingSystem;
 import java.util.Scanner;
 
 public class BankMenu_SendingMoney {
-    static Scanner sc = new Scanner(System.in);
     private static boolean isSystem_Run = true;
+    static Scanner sc = new Scanner(System.in);
 
     public static void BankMenu_SendingMoneyDo(Userinfo giveUser, Userinfo takeUser) {
         while (isSystem_Run) {
@@ -45,7 +45,6 @@ public class BankMenu_SendingMoney {
                         isSystem_Run = true;
                     }
                     if (continueNumber == 2) {
-                        isSystem_Run = false;
                         break;
 
                     }
@@ -58,7 +57,7 @@ public class BankMenu_SendingMoney {
             }
             if (SendingMenu == 2) {
                 System.out.println("SendingMoney System is Exit");
-                isSystem_Run = false;
+                break;
             }
 
         }
