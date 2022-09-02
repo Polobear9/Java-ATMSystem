@@ -1,12 +1,12 @@
-package BankingSystem;
+package BankingSystem.BankingSystem;
 
 import java.util.Scanner;
 
 public class BankMenu_CheckBalance {
-    Scanner scanner = new Scanner(System.in);
-    boolean isSystem_Run = true;
+    static Scanner scanner = new Scanner(System.in);
+    private static boolean isSystem_Run = true;
 
-    BankMenu_CheckBalance(Userinfo userinfo) {
+    public static void BankMenu_CheckBalanceDo(Userinfo userinfo) {
         while (isSystem_Run) {
             System.out.println("Welcome to Check Balace System.");
 
@@ -18,6 +18,7 @@ public class BankMenu_CheckBalance {
 
             if (selectMenuNum == 1) {
                 isSystem_Run = false;
+                break;
             }
             if (selectMenuNum == 2) {
                 isSystem_Run = true;
