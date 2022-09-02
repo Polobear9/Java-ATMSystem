@@ -27,25 +27,24 @@ public class BankingDEMO {
             System.out.println("Enter the Number Here : ");
             MenuNum = sc.nextInt();
 
-            if (MenuNum == 1) {
-                BankMenu_CheckBalance.BankMenu_CheckBalanceDo(Lee);
-            }
+            switch (MenuNum) {
+                case 1:
+                    BankMenu_CheckBalance.BankMenu_CheckBalanceDo(Lee);
+                    break;
+                case 2:
+                    BankMenu_SendingMoney.BankMenu_SendingMoneyDo(Lee, Kim);
+                    break;
+                case 3:
+                    BankMenu_DisbursementsMoney.BankMenu_DisbursementsMoneyDo(Lee);
+                    break;
 
-            if (MenuNum == 2) {
-                BankMenu_SendingMoney.BankMenu_SendingMoneyDo(Lee, Kim);
-            }
+                case 4:
+                    BankMenu_CreditMoney.BankMenu_CreditMoneyDo(Lee);
+                    break;
 
-            if (MenuNum == 3) {
-                BankMenu_DisbursementsMoney.BankMenu_DisbursementsMoneyDo(Lee);
-            }
-
-            if (MenuNum == 4) {
-                BankMenu_CreditMoney.BankMenu_CreditMoneyDo(Lee);
-            }
-
-            if (MenuNum == 5) {
-                System.out.println("Thanks for Use. Have a Nice day! ");
-                break;
+                case 5:
+                    System.out.println("Thanks for Use. Have a Nice day! ");
+                    break;
             }
         }
     }
