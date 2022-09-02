@@ -39,25 +39,7 @@ public class BankingDEMO {
             }
 
             if (MenuNum == 3) {
-                while (SelectMenuNum != 2) {
-                    System.out.println("Welcome to Out Money System.");
-                    System.out.println("DO you want out of Money? : 1.YES 2.NO");
-                    SelectMenuNum = sc.nextInt();
-                    if (SelectMenuNum == 1) {
-                        System.out.println("How many Money do you want out? : ");
-                        int Out_Money = sc.nextInt();
-                        System.out.println("Do you want out -->> : " + Out_Money + " ? ");
-                        System.out.println(" 1.YES 2.NO ");
-                        int MenuSelect = sc.nextInt();
-                        if (MenuSelect == 1) {
-                            int NowCash = Lee.Balance - Out_Money;
-                            System.out.println("Your Money is left : " + NowCash);
-                        }
-                    }
-                    if (SelectMenuNum == 2) {
-                        break;
-                    }
-                }
+                BankMenu_DisbursementsMoney.BankMenu_DisbursementsMoneyDo(Lee);
             }
 
             if (MenuNum == 4) {
