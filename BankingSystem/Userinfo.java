@@ -15,12 +15,13 @@ public class Userinfo {
 	private String name_Bank;
 	private final int BANK_NUMBER = ran.nextInt(1000000000);
 	private int balance = 1000000;
-	
+	private int creadit = 0;
 	public Userinfo (String name_Bank, String name_User) {
 		setName_Bank(name_Bank);
 		setName_User(name_User);
 	}
 
+	// ---------->> Getter and setter <<----------
 	public String getName_User() {
 		return name_User;
 	}
@@ -48,4 +49,16 @@ public class Userinfo {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
+
+	public int getCreadit() {
+		return creadit;
+	}
+
+	public void setCreadit(int creadit) {
+		this.creadit = creadit;
+	}
+
+	// ---------->> Getter and setter <<---------- //
+
+
 }
