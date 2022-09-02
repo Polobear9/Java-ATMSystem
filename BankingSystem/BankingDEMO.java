@@ -43,21 +43,7 @@ public class BankingDEMO {
             }
 
             if (MenuNum == 4) {
-                while (SelectMenuNum != 2) {
-                    int AddMoney = Lee.GetBalance();
-                    System.out.println("Welcome to Creadit System.");
-                    System.out.println("Pleace input the Number : ");
-                    int creaditplus = sc.nextInt();
-                    AddMoney += creaditplus;
-                    System.out.println("DO you want out? 1.YES 2.NO");
-                    SelectMenuNum = sc.nextInt();
-                    if (SelectMenuNum == 1) {
-                        break;
-                    }
-                    if (SelectMenuNum == 2) {
-                        SelectMenuNum = 0;
-                    }
-                }
+                BankMenu_CreditMoney.BankMenu_CreditMoneyDo(Lee);
             }
 
             if (MenuNum == 5) {

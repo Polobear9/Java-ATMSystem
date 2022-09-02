@@ -52,6 +52,7 @@ public class BankMenu_SendingMoney {
 
                     if (FinalCheck == 2) {
                         //need to make a method for set a sending money.
+                        continue;
                     }
                 }
             }
