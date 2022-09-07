@@ -21,10 +21,8 @@ public class BankMenu_CreditMoney {
             System.out.println("DO you want out? 1.YES 2.NO");
             SelectMenuNum = sc.nextInt();
             if (SelectMenuNum == 1) {
+                isSystem_Run = false;
                 break;
-            }
-            if (SelectMenuNum == 2) {
-                continue;
             }
         }
     }

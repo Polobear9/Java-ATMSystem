@@ -13,25 +13,23 @@ public class BankMenu_SendingMoney {
             System.out.println("Do you want sending the Money?");
             System.out.println("1.YES 2.NO");
             int SendingMenu = sc.nextInt();
-            int sendingMoney = 0;
 
             if (SendingMenu == 1) {
                 System.out.println("How many Money do you wnat sending?");
                 System.out.println("Enter the Number : ");
 
                 int setSendingMoney = sc.nextInt();
-                sendingMoney = setSendingMoney;
 
                 System.out.println("Really Do you want Send the Money?");
-                System.out.println("You Set the Money : " + sendingMoney);
+                System.out.println("You Set the Money : " + setSendingMoney);
 
                 System.out.println("1.YES 2.NO");
                 int FinalCheck = sc.nextInt();
 
                 if (FinalCheck == 1) {
                     System.out.println("Sending is Finish.");
-                    giveUser.setBalance(giveUser.getBalance() - sendingMoney);
-                    takeUser.setBalance(takeUser.getBalance() + sendingMoney);
+                    giveUser.setBalance(giveUser.getBalance() - setSendingMoney);
+                    takeUser.setBalance(takeUser.getBalance() + setSendingMoney);
 
                     System.out.println("Pleace Chack the Balance.");
                     System.out.println(giveUser.getBalance());
@@ -47,11 +45,6 @@ public class BankMenu_SendingMoney {
                     if (continueNumber == 2) {
                         break;
 
-                    }
-
-                    if (FinalCheck == 2) {
-                        //need to make a method for set a sending money.
-                        continue;
                     }
                 }
             }

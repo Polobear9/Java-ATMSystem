@@ -22,6 +22,7 @@ public class BankMenu_DisbursementsMoney {
                 }
             }
             if (SelectMenuNum == 2) {
+                isSystem_Run = false;
                 break;
             }
         }
