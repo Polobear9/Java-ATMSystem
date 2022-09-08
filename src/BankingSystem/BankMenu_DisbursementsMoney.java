@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class BankMenu_DisbursementsMoney {
     static Scanner sc = new Scanner(System.in);
     private static boolean isSystem_Run = true;
-    public static void BankMenu_DisbursementsMoneyDo(Userinfo userinfo){
+
+    public static void BankMenu_DisbursementsMoneyDo(Userinfo userinfo) {
         while (isSystem_Run) {
             System.out.println("Welcome to Out Money System.");
             System.out.println("DO you want out of Money? : 1.YES 2.NO");

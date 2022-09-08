@@ -1,6 +1,5 @@
 package BankingSystem;
 
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -10,13 +9,12 @@ public class BankingDEMO {
     static boolean Running = true;
     static int MenuNum = 0;
     static int SelectMenuNum = 0;
-    Random ran = new Random();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         while (Running) {
             SelectMenuNum = 0;
-            System.out.println("First We made a your Banknumber  " + "Your Banknumber is " + Lee.getBANK_NUMBER());
+            System.out.println("Hi ! " + Lee.getName_User() + "First We made a your Bank-number  " + "Your Bank-number is " + Lee.getBANK_NUMBER() + " Bank name :" + Lee.getName_Bank());
             System.out.println("Welcome to " + " System. Please Enter the Number. (1~5)");
             System.out.println("----1 : " + "Check Balance.");
             System.out.println("----2 : " + "Sending Money.");
@@ -44,9 +42,9 @@ public class BankingDEMO {
 
                 case 5:
                     System.out.println("Thanks for Use. Have a Nice day! ");
+                    Running = false;
                     break;
             }
-            break;
         }
     }
 }

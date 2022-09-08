@@ -2,6 +2,10 @@ package BankingSystem;
 
 import java.util.Scanner;
 
+/**
+ * Sending Money class, it will be added the Bank-account.
+ * when make a user instance to Userinfo Array.
+ */
 public class BankMenu_SendingMoney {
     private static boolean isSystem_Run = true;
     static Scanner sc = new Scanner(System.in);
@@ -15,7 +19,7 @@ public class BankMenu_SendingMoney {
             int SendingMenu = sc.nextInt();
 
             if (SendingMenu == 1) {
-                System.out.println("How many Money do you wnat sending?");
+                System.out.println("How many Money do you want sending?");
                 System.out.println("Enter the Number : ");
 
                 int setSendingMoney = sc.nextInt();
@@ -31,7 +35,7 @@ public class BankMenu_SendingMoney {
                     giveUser.setBalance(giveUser.getBalance() - setSendingMoney);
                     takeUser.setBalance(takeUser.getBalance() + setSendingMoney);
 
-                    System.out.println("Pleace Chack the Balance.");
+                    System.out.println("Please Check the Balance.");
                     System.out.println(giveUser.getBalance());
 
                     System.out.println("Do you want Continue?");
@@ -46,6 +50,8 @@ public class BankMenu_SendingMoney {
                         break;
 
                     }
+                } else {
+                    System.out.println("User Cancel the sending Money. Return to Top");
                 }
             }
             if (SendingMenu == 2) {
